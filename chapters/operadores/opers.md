@@ -13,8 +13,19 @@ Python soporta varios tipos de operadores. En esta sección nos enfocaremos en a
 
 ## Operadores aritméticos
 
-Los operadores aritméticos son lso encargados para realizar las operaciones matemáticas.
+Los operadores aritméticos son los encargados para realizar las operaciones matemáticas.
 
 ![Operadores Aritméticos](./figures/opers_1.png)
 
 ## Operadores de asignación
+
+Los operadores de asignación son usados para asignar valores a las variables.
+
+![Operadores de Asignación](./figures/opers_2.png)
+
+## Operadores de comparasión
+
+Los operadores de comparasión son usados para comparar dos valores.
+
+![Operadores de Comparasión](./figures/opers_3.png)
+
