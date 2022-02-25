@@ -23,6 +23,47 @@ Los operadores de asignación son usados para asignar valores a las variables.
 
 ![Operadores de Asignación](./figures/opers_2.png)
 
+Realicemos algunos ejemplos
+
+```python
+print('Suma', 1 + 2)
+print('Resta', 2 - 1)
+print('Multiplicacion', 2 * 3)
+print('Division', 4 / 2)
+print('Division', 6 / 2)
+print('Division', 7 / 2)
+print('Division entera', 7 // 2)
+print('Division entera', 7 // 3)
+print('Modulo', 3 % 2)
+print('Potencias', 2 ** 3)
+```
+
+Declaremos algunas variables asignandoles un valor numérico:
+
+```python
+a = 7
+b = 3
+
+suma = a + b
+resta = a - b
+multi = a * b
+division = a / b
+res = a % b
+floor = a // b
+exponente = a ** b
+
+print(suma)
+print('a + b = ', suma)
+print('a - b = ', resta)
+print('a * b = ', multi)
+print('a / b = ', division)
+print('a % b = ', res)
+print('a // b = ', floor)
+print('a ** b = ', exponente)
+```
+
+Hagamos un programa en un editor de texto
+
 ## Operadores de comparasión
 
 Los operadores de comparasión son usados para comparar dos valores.
