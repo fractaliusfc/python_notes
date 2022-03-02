@@ -1,4 +1,4 @@
-# Python Notes 
+# Python Notes
 
 ## Índice
 
@@ -7,3 +7,4 @@
 | 1        | [Introducción](./chapters/introduccion/intro.md)                      |
 | 2        | [Variables y Funciones](./chapters/vars_funcs/variables_functions.md) |
 | 3        | [Operadores](./chapters/operadores/opers.md)                          |
+| 4        | [Strings](./chapters/strings/strings.md)                              |
