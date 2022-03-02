@@ -121,13 +121,13 @@ Los operadores de comparasión son usados para comparar dos valores. En los prog
 Ejemplos:
 
 ```python
-print(3 > 2)    
-print(3 >= 2)   
-print(3 < 2)     
-print(2 < 3)     
-print(2 <= 3)    
-print(3 == 2)    
-print(3 != 2)    
+print(3 > 2)
+print(3 >= 2)
+print(3 < 2)
+print(2 < 3)
+print(2 <= 3)
+print(3 == 2)
+print(3 != 2)
 print(len('mango') == len('ciruela'))  # False
 print(len('mango') != len('ciruela'))  # True
 print(len('mango') < len('ciruela'))   # True
@@ -158,4 +158,27 @@ print('c in Carlos', 'c' in 'Carlos') # False
 print('codigo' in 'codigo en masa') # True
 print('a in caballo:', 'a' in 'caballo')      # True
 print('4 is 2 ** 2:', 4 is 2 ** 2)   # True
+```
+## Operadores Lógicos
+
+Los operadores lógicos son usados para combinar diferentes declaraciones condicionales. En Python se usan las palabras `and`, `or` y `not`.
+
+![Operadores Lógicos](./figures/opers_4.png)
+
+Algunos ejemplos:
+
+```python
+print(3 > 2 and 4 > 3) # True
+print(3 > 2 and 4 < 3) # False
+print(3 < 2 and 4 < 3) # False
+print('True y True: ', True and True)
+print(3 > 2 or 4 > 3)  # True
+print(3 > 2 or 4 < 3)  # True
+print(3 < 2 or 4 < 3)  # False
+print('True o False:', True or False)
+print(not 3 > 2)     # False
+print(not True)      # False
+print(not False)     # True
+print(not not True)  # True
+print(not not False) # False
 ```
