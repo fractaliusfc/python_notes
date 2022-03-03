@@ -53,3 +53,85 @@ En los lenguajes de programación existen secuencias de escape que funcionan par
 - `\"`: Comillas dobles
 
 Ejemplos:
+
+```python
+print('Hola \nMundo')
+print('Buenas\ttardes\tCarlos')
+print('Esta es la manera de escribir una diagonal (\\)')
+print('El primer programa inicia con \"Hola Mundo\"')
+```
+
+## Formateo de Strings
+
+### Estilo Clásico (Operador %)
+
+En python existen distintas maneras de darle cierto formato a las `strings`. El operador `%` es usado para usar un conjunto de variables en una string. Al usar este operador, se tiene que especificar el tipo de variable y/o numero de digitos que uno quiere obtener. 
+
+- %s Se usa para strings o cualquier cosa que se pueda representar con strings
+- %d Para enteros
+- %f Para decimales
+- %.numero_de_digitosf Número de decimales
+
+Ejemplos
+
+```python
+nombre = 'Carlos'
+apellido = 'Espinosa'
+lenguaje = 'Python'
+string_format1 = 'Hola, soy %s %s. Estamos aprendiendo %s' %(nombre, apellido, lenguaje)
+print(string_format1)
+
+radio = 10
+pi = 3.14
+area = pi * radio ** 2
+string_format2 = 'El area de un circulo con un radio %d es %.2f.' %(radio, area)
+print(string_format2)
+```
+
+### Estilo nuevo (str.format)
+
+Este estilo fue introducido con Python 3
+
+```python
+nombre = 'Carlos'
+apellido = 'Espinosa'
+lenguaje = 'Python'
+string_format3 = 'Hola soy {} {}. Estamos aprendiendo {}'.format(nombre, apellido, lenguaje)
+print(string_format3)
+
+a = 4
+b = 3
+
+print('{} + {} = {}'.format(a, b, a + b))
+print('{} - {} = {}'.format(a, b, a - b))
+print('{} * {} = {}'.format(a, b, a * b))
+print('{} / {} = {:.2f}'.format(a, b, a / b))
+print('{} % {} = {}'.format(a, b, a % b))
+print('{} // {} = {}'.format(a, b, a // b))
+print('{} ** {} = {}'.format(a, b, a ** b))
+
+radio = 10
+pi = 3.14
+area = pi * radio ** 2
+string_format4 = 'El area de un circulo con un radio {} es {:.2f}'.format(radio, area)
+print(string_format4)
+```
+
+### f-strings
+
+En las nuevas versiones de Python (3.6+) se incluyo las llamadas **f-strings**. Este método se caracteriza por `strings` iniciando con `f` y teniendo una sintaxis similar al estilo anterior.
+
+```python
+a = 4
+b = 3
+
+print(f'{a} + {b} = {a + b}')
+print(f'{a} - {b} = {a - b}')
+print(f'{a} * {b} = {a * b}')
+print(f'{a} / {b} = {a / b:.2f}')
+print(f'{a} % {b} = {a % b}')
+print(f'{a} // {b} = {a // b}')
+print(f'{a} ** {b} = {a ** b}')
+```
+
+## Strings como secuencia de caracteres
