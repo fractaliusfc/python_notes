@@ -135,3 +135,43 @@ print(f'{a} ** {b} = {a ** b}')
 ```
 
 ## Strings como secuencia de caracteres
+
+Otra forma de ver las `strings` en Python es como una secuencia de caracteres. La forma mas simple de extraer cada uno de los caracteres que forman una `string` es *desempaquetandolos* en distintas variables.
+
+```python
+lenguaje = 'Python'
+a,b,c,d,e,f = languaje
+print(a) # P
+print(b) # y
+print(c) # t
+print(d) # h
+print(e) # o
+print(f) # n
+```
+
+### Accediendo a los caracteres por índice
+
+A cada uno de los caracteres en un string se les asigna un *id* basado en su posición. A este *id* se le conoce como **índice**. En muchos lenguajes de programación, el índice empieza desde 0. Por lo tanto, la primera letra de una string tiene un índice 0, mientras que la última letra su índice es igual al número de caracteres menos 1.
+
+![Índices en una string](./figures/string_index.png)
+
+```python
+lenguaje = 'python'
+primera_letra = lenguaje[0]
+print(primera_letra)
+segunda_letra = lenguaje[1]
+print(segundo_letra)
+ultimo_indice = len(lenguaje) - 1
+ultima_letra = lenguaje[ultimo_indice]
+print(ultima letra)
+```
+
+También se puede empezar a contar de derecha a izquierda usando índices negativos. Donde -1 es el último índice
+
+```python
+lenguaje = 'python'
+ultima_letra = lenguaje[-1]
+print(ultima_letra)
+segunda_ultima_letra = lenguaje[-2]
+print(segunda_ultima_letra)
+```
