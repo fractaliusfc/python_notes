@@ -65,7 +65,7 @@ print('El primer programa inicia con \"Hola Mundo\"')
 
 ### Estilo Clásico (Operador %)
 
-En python existen distintas maneras de darle cierto formato a las `strings`. El operador `%` es usado para usar un conjunto de variables en una string. Al usar este operador, se tiene que especificar el tipo de variable y/o numero de digitos que uno quiere obtener. 
+En python existen distintas maneras de darle cierto formato a las `strings`. El operador `%` es usado para usar un conjunto de variables en una string. Al usar este operador, se tiene que especificar el tipo de variable y/o numero de digitos que uno quiere obtener.
 
 - %s Se usa para strings o cualquier cosa que se pueda representar con strings
 - %d Para enteros
