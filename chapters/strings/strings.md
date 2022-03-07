@@ -166,7 +166,7 @@ ultima_letra = lenguaje[ultimo_indice]
 print(ultima letra)
 ```
 
-También se puede empezar a contar de derecha a izquierda usando índices negativos. Donde -1 es el último índice
+También se puede empezar a contar de derecha a izquierda usando índices negativos, donde la ultima letra le corresponde el índice -1.
 
 ```python
 lenguaje = 'python'
@@ -174,4 +174,89 @@ ultima_letra = lenguaje[-1]
 print(ultima_letra)
 segunda_ultima_letra = lenguaje[-2]
 print(segunda_ultima_letra)
+```
+
+### Substrings de strings
+
+Podemos obtener *substrings* a partir de una string:
+
+```python
+palabra = 'python'
+primeras_tres = palabra[0:3] # Devuelve desde el indice 0 hasta el 3 sin incluir el 3
+print(primeras_tres)
+ultimas_tres = palabra[3:6]
+print(ultimas_tres)
+ultimas_tres_alt = palabra[-3:]
+print(ultimas_tres)
+ultimas_tres_alt2 = palabras[3:]
+print(ultimas_tres)
+```
+
+### Substring saltando letras
+
+Cuando definimos una substring, podemos especificar si queremos tener un salto diferente en los índices.
+
+```python
+palabra = 'Python'
+substring = palabra[0:6:2]
+print(substring)
+```
+
+### Invirtiendo una string
+
+Podemos invertir una string de una manera sencilla
+
+```python
+saludo = 'Hola Mundo'
+saludo_inv = saludo[::-1]
+print(saludo_inv)
+```
+
+## Métodos de Strings
+
+Los métodos son **funciones** que realizan una tarea especifica. En este caso veremos método que toman una string como argumento y realizan una tarea específica con ella. Hay bastantes métodos de strings, aquí solamente veremos algunos.
+
+- `capitalize()`: Convierte el primer caracter de una string a mayúscula
+
+```python
+mensaje = 'metodos numericos y algoritmos computacionales'
+print(mensaje.capitalize())
+```
+
+- `count()`: Regresa el numero de veces que una substring aparece en una string.
+
+```python
+mensaje = 'metodos numericos y algoritmos computacionales'
+print(mensaje.count('m'))
+print(mensaje.count('m', 17, 25))
+print(mensaje.count('os'))
+```
+
+- `endswith()`: Revisa si la string termina con una determinada string
+
+```python
+mensaje = 'metodos numericos y algoritmos computacionales'
+print(mensaje.endswith('les'))   # True
+print(mensaje.endswith('le'))    # False 
+```
+
+- `strip()`: Elimina todos los caracteres especificados
+
+```python
+mensaje = 'metodos numericos y algoritmos computacionales'
+print(mensaje.strip('met'))
+```
+
+- `split()`: Divide la string de acuerdo a otra string
+
+```python
+mensaje = 'metodos numericos y algoritmos computacionales'
+print(mensaje.split('s'))
+```
+
+- `startswith()`: Revisa si una string inicia con una string especifica
+```python
+mensaje = 'metodos numericos y algoritmos computacionales'
+print(mensaje.startswith('met'))   # True
+print(mensaje.startswith('metu'))    # False 
 ```
