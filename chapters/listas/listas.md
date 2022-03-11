@@ -190,3 +190,64 @@ print(frutas)
 frutas.insert(3, 'pera')
 print(frutas)
 ```
+
+## Eliminando un elemento de una lista
+
+### Usando remove
+
+Para eliminar un elemento especifico de una lista se utiliza el *método* `remove()`
+
+```python
+frutas = ['manzana', 'lima','limon', 'naranja', 'mango', 'platano', 'manzana']
+frutas.remove('manzana')
+print(frutas)
+frutas.remove('limon')
+print(frutas)
+```
+
+### Usando pop
+
+El *método* `pop()` elimina el elemento del índice especificado (o el último elemento si el índice no se especifica).
+
+```python
+frutas = ['manzana', 'lima','limon', 'naranja', 'mango', 'platano']
+frutas.pop()
+print(frutas)
+frutas.pop(0)
+print(frutas)
+```
+
+### Usando del
+
+La función `del` elimina el elemento del índice especificado y puede ser usado para borrar elementos dentro de un rango de índices. También puede eliminar la lista completa.
+
+```python
+frutas = ['manzana', 'lima','limon', 'naranja', 'mango', 'platano']
+del frutas[0]
+print(frutas)
+del frutas[1]
+print(frutas)
+del frutas [1:3]
+print(frutas)
+del frutas
+print(frutas)
+```
+
+### Usando clear
+
+El método `clear` borrará todos los elementos de una lista dada
+```python
+frutas = ['manzana', 'lima','limon', 'naranja', 'mango', 'platano']
+frutas.clear()
+print(frutas)
+```
+
+## Copiando una lista
+
+Es posible copiar una lista declarando una variable, por ejemplo: `lista2 = lista1`. Pero esto solo creará una referencia a la `lista1`, cualquier cambio que le hagamos a la `lista2` tambien modificará a la original. Pero, en la mayoría de los casos, no queremos modificar la lista original, por lo que necesitamos crear una nueva copia. Una de las maneras de hacer esto es con el comando `copy()`.
+
+````python
+frutas = ['manzana', 'lima','limon', 'naranja', 'mango', 'platano']
+frutas_copia = frutas.copy()
+print(frutas_copia)
+```
