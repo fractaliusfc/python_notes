@@ -316,7 +316,7 @@ Para ordenar los elementos podemos usar el método `sort()` o el método `sorted
 nums1 = [22, 19, 24, 25, 26, 24, 25, 24]
 nums2 = [22, 19, 24, 25, 26, 24, 25, 24]
 nums1.sort()
-nums2.sort(reserve=True)
+nums2.sort(reverse=True)
 ```
 
 ```python
