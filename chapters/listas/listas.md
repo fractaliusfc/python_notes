@@ -246,8 +246,82 @@ print(frutas)
 
 Es posible copiar una lista declarando una variable, por ejemplo: `lista2 = lista1`. Pero esto solo creará una referencia a la `lista1`, cualquier cambio que le hagamos a la `lista2` tambien modificará a la original. Pero, en la mayoría de los casos, no queremos modificar la lista original, por lo que necesitamos crear una nueva copia. Una de las maneras de hacer esto es con el comando `copy()`.
 
-````python
+```python
 frutas = ['manzana', 'lima','limon', 'naranja', 'mango', 'platano']
 frutas_copia = frutas.copy()
 print(frutas_copia)
+```
+
+## Uniendo listas
+
+Hay distintas maneras de unir o concatenar listas.
+
+### Operador suma (+)
+
+```python
+nums1 = [1, 2, 3, 4, 5]
+nums2 = [10, 11, 12, 13, 14]
+nums_suma = nums1 + nums2
+print(nums)
+```
+
+### Usando el método extend
+
+El método extend nos permite agregar listas a una lista.
+
+```python
+nums1 = [1, 2, 3, 4, 5]
+nums2 = [10, 11, 12, 13, 14]
+nums1.extend(nums2)
+print(nums1)
+```
+
+## Contando los elementos en una lista
+
+Tenemos un método especial para contar los elementos en una lista, este método es `count`.
+
+```python
+nums1 = [1, 2, 3, 4, 5, 1, 2, 3, 1, 2]
+nums2 = [10, 11, 12, 13, 14]
+print(nums1.counts(1))
+print(nums2.counts(11))
+```
+
+## Encontrado el índice de un elemento
+
+El método `index()` nos dice el índice de un elemento en una lista
+
+```python
+nums1 = [1, 2, 3, 4, 5, 1, 2, 3, 1, 2]
+nums2 = [10, 11, 12, 13, 14]
+print(nums2.index(11))
+print(nums1.index(1))
+```
+
+## Invertir una lista
+
+Tenemos un método especial para invertir una lista, este método es `reverse()`
+
+```python
+nums1 = [1, 2, 3, 4, 5, 1, 2, 3, 1, 2]
+nums1.reverse()
+print(nums1)
+```
+
+## Ordenando los elementos de una lista
+
+Para ordenar los elementos podemos usar el método `sort()` o el método `sorted()`. El método `sort()` reordena los elementos en un orden ascendente y modifica la lista original. Existe el argumento `reverse` que permite ordenar los elementos en un orden descendente.
+
+```python
+nums1 = [22, 19, 24, 25, 26, 24, 25, 24]
+nums2 = [22, 19, 24, 25, 26, 24, 25, 24]
+nums1.sort()
+nums2.sort(reserve=True)
+```
+
+```python
+nums1 = [22, 19, 24, 25, 26, 24, 25, 24]
+print(sorted(nums1))
+nums1 = [22, 19, 24, 25, 26, 24, 25, 24]
+print(sorted(nums1, reverse=True))
 ```
