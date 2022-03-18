@@ -143,4 +143,54 @@ frutas1.intersection(frutas2)
 
 ## Revisando si un subconjuntos
 
+Un conjunto puede ser un subconjunto o un superconjunto de otros subconjuntos. Para esto se usan los métodos `issubset()` y `issuperset()`.
 
+```python
+numeros = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+numeros_pares = {0, 2, 4, 6, 8, 10}
+numeros.issubset(numeros_pares)
+numeros.issuperset(numeros_pares)
+```
+
+## Revisando la diferencia entre dos conjuntos
+
+El método `difference` nos dará como resultado la diferencia entre dos conjuntos.
+
+```python
+numeros = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+numeros_pares = {0, 2, 4, 6, 8, 10}
+numeros.difference(numeros_pares)
+
+python = {'p', 'y', 't', 'h', 'o','n'}
+dragon = {'d', 'r', 'a', 'g', 'o','n'}
+python.difference(dragon)    
+dragon.difference(python)     
+```
+
+## Diferencia simétrica entre dos conjuntos
+
+La diferencia simétrica es un conjunto que contiene los elementos de ambos conjuntos excepto aquellos que están en ambos conjuntos.
+
+```python
+numeros = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+algunos_numeros = {1, 2, 3, 4, 5}
+numeros.symmetric_difference(algunos_numeros)
+
+python = {'p', 'y', 't', 'h', 'o','n'}
+dragon = {'d', 'r', 'a', 'g', 'o','n'}
+python.symmetric_difference(dragon) 
+```
+
+## Conjuntos disconjuntos
+
+Si dos conjuntos no tienen elementos en común se les dice conjuntos disconjuntos. Podemos revisar esto con el método `isdisjoint()`.
+
+```python
+numeros pares = {0, 2, 4 ,6, 8}
+numeros_impares = {1, 3, 5, 7, 9}
+numeros_pares.isdisjoint(numeros_impares)
+
+python = {'p', 'y', 't', 'h', 'o','n'}
+dragon = {'d', 'r', 'a', 'g', 'o','n'}
+python.isdisjoint(dragon)
+```
