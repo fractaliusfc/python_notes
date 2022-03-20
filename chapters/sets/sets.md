@@ -181,9 +181,9 @@ dragon = {'d', 'r', 'a', 'g', 'o','n'}
 python.symmetric_difference(dragon) 
 ```
 
-## Conjuntos disconjuntos
+## Conjuntos disjuntos
 
-Si dos conjuntos no tienen elementos en común se les dice conjuntos disconjuntos. Podemos revisar esto con el método `isdisjoint()`.
+Si dos conjuntos no tienen elementos en común se les dice conjuntos disjuntos. Podemos revisar esto con el método `isdisjoint()`.
 
 ```python
 numeros pares = {0, 2, 4 ,6, 8}
