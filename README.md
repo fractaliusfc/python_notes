@@ -13,3 +13,4 @@
 | 7        | [Conjuntos](./chapters/sets/sets.md)                                  |
 | 8        | [Diccionarios](./chapters/dictionaries/dictionaries.md)               |
 | 9        | [Condicionales](./chapters/conditionals/conditionals.md)              |
+| 10       | [Ciclos](./chapters/loops/loops.md)                                   |
