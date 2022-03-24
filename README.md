@@ -10,4 +10,6 @@
 | 4        | [Strings](./chapters/strings/strings.md)                              |
 | 5        | [Listas](./chapters/listas/listas.md)                                 |
 | 6        | [Tuplas](./chapters/tuples/tuples.md)                                 |
-| 7        | [Conjuntos](./chapters/sets/sets.md)
+| 7        | [Conjuntos](./chapters/sets/sets.md)                                  |
+| 8        | [Diccionarios](./chapters/dictionaries/dictionaries.md)               |
+| 9        | [Condicionales](./chapters/conditionals/conditionals.md)              |
