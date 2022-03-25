@@ -50,6 +50,7 @@ Por otra parte, tambi√©n podemos tener la necesidad de saltarnos cierta iteraci√
 contador = 0
 while contador < 5:
     if contador == 3:
+        contador = contador + 1
         continue
     print(contador)
     contador = contador + 1
