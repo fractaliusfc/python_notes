@@ -14,3 +14,4 @@
 | 8        | [Diccionarios](./chapters/dictionaries/dictionaries.md)               |
 | 9        | [Condicionales](./chapters/conditionals/conditionals.md)              |
 | 10       | [Ciclos](./chapters/loops/loops.md)                                   |
+| 11       | [Funciones](./chapters/functions/functions.md)                        |
