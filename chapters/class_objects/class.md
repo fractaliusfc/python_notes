@@ -126,4 +126,58 @@ Tengamos otro ejemplo:
 class animal():
     def __init__(self):
         print("Un animal ha sido creado")
+    
+    def que_eres(self):
+        print("Soy un animal")
+    
+    def dormir(self):
+        print("Durmiendo")
+
+ani1 = animal()
+ani1.dormir()
+```
+
+Hagamos una nueva clase heredando los elementos de la clase base. Hagamos una clase *gato*.
+
+```python
+class gato(animal):
+    def __init__(self):
+        animal.__init__(self)
+        print('Un gato a sido creado')
+    
+    def que_eres(self):
+        print("Soy un gato")
+
+    def maullar(self):
+        print("Miau")
+
+suertudo = gato()
+suertudo.que_eres()
+suertudo.maullar()
+```
+
+## Polimorfismo
+
+El polimorfismo en programación se refiere a la manera en que diferentes clases y objetos puedes compartir el mismo nombre de un método. Creemos dos clases, una de *perro* y otra de *gato* que van a tener el mismo método **hablar**. Cuando creamos el método `hablar`, este regresará un resultado único del objeto.
+
+```python
+class perro():
+    def __init__(self, nombre):
+        self.nombre = nombre
+
+    def hablar(self):
+        return self.nombre + " dice guau"
+
+class gato():
+    def __init__(self, nombre):
+        self.nombre = nombre
+
+    def hablar(self):
+        return self.nombre + " dice miau"
+
+p1 = perro("Lucas")
+g1 = gato("Mina")
+
+print(p1.hablar())
+print(g1.hablar())
 ```
