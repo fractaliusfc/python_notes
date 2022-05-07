@@ -15,3 +15,5 @@
 | 9        | [Condicionales](./chapters/conditionals/conditionals.md)              |
 | 10       | [Ciclos](./chapters/loops/loops.md)                                   |
 | 11       | [Funciones](./chapters/functions/functions.md)                        |
+| 12       | [Notación Big-O](./chapters/big_O_notation/big_o.md)                  |
+| 13       | [Clase](./chapters/class_objects/class.md)                            |
